@@ -8,22 +8,22 @@ public class ShooterSam : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-		PublicDependencyModuleNames.AddRange(new string[] {
-			"Core",
-			"CoreUObject",
-			"Engine",
-			"InputCore",
-			"EnhancedInput",
-			"AIModule",
-			"StateTreeModule",
-			"GameplayStateTreeModule",
-			"UMG",
-			"Slate"
+		PublicDependencyModuleNames.AddRange(new string[] { // Add other public dependencies that you statically link with here...
+			"Core", // For core engine features
+			"CoreUObject", // For UObject system
+			"Engine", // For general engine features
+			"InputCore", // For basic input
+			"EnhancedInput", // For Enhanced Input
+			"AIModule", // For AI
+			"StateTreeModule", // For State Trees
+			"GameplayStateTreeModule", // For Gameplay State Trees
+			"UMG", // For UI
+			"Slate" // For UI
 		});
 
-		PrivateDependencyModuleNames.AddRange(new string[] { });
+		PrivateDependencyModuleNames.AddRange(new string[] { }); // Add private dependencies that you statically link with here...
 
-		PublicIncludePaths.AddRange(new string[] {
+		PublicIncludePaths.AddRange(new string[] { // Add public include paths required here...
 			"ShooterSam",
 			"ShooterSam/Variant_Platforming",
 			"ShooterSam/Variant_Platforming/Animation",
